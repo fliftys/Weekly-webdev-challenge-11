@@ -26,7 +26,8 @@ img {
 .container {
   max-width: 1170px;
   margin: 0 auto;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 1rem; }
 
 .btn-light, .btn-green {
   display: inline-block;
