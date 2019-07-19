@@ -42,6 +42,7 @@ img{
     padding: 1rem 2rem;
     border: none;
     border-radius: 1.5rem;
+    cursor: pointer;
 }
 
 .btn{
@@ -95,8 +96,6 @@ img{
                     justify-content: space-around;
 
                     li{
-
-
                         a{
                             display: block;
                             font-size: 0.8rem;
@@ -139,7 +138,7 @@ img{
             }
         }
 
-        .header-down{
+        .header-bottom{
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -225,6 +224,7 @@ img{
     background: #f2fefe;
     padding: 2rem;
     .content-top{
+        border-bottom: 1px dotted $medium_color;
         min-height: 360px;
         display: grid;
         grid-template-areas:
@@ -282,7 +282,9 @@ img{
             }
 
             .options{
-
+                label{
+                    cursor: pointer;
+                }
 
                 input[type=checkbox]{
                     display: none;
@@ -439,6 +441,7 @@ img{
                     div{
                         color: $light_green;
                         font-weight: bold;
+                        cursor: pointer;
                     }
                 }
             }
@@ -455,7 +458,8 @@ img{
     .footer-top{
         background: linear-gradient($light-green, #b1e568);
         min-height: 210px;
-        &.footer-content{
+
+        .footer-content{
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -525,3 +529,8 @@ img{
         }
     }
 }
+
+/* -------------------------------------- */
+/* Media Queries */
+/* -------------------------------------- */
+@import 'media';

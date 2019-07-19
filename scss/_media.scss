@@ -1,0 +1,215 @@
+/* -------------------------------------- */
+/* Media Queries */
+/* -------------------------------------- */
+
+/* -------------------------------------- */
+/* Tablets and other */
+/* -------------------------------------- */
+
+@media (max-width: 860px) {
+  #main-footer {
+    // Top footer
+    .footer-content {
+      flex-direction: column;
+
+      h1 {
+        margin: 1rem 0;
+      }
+      p {
+        margin: 1rem 0;
+      }
+      .subscription {
+        margin: 1rem 0;
+      }
+    }
+
+    // Bottom footer
+
+    .footer-bottom {
+      min-height: 200px;
+
+      .bottom-content {
+        grid-template-rows: 170px 30px;
+      }
+    }
+  }
+}
+
+/* -------------------------------------- */
+/* Smartphones */
+/* -------------------------------------- */
+
+@media (max-width: 675px) {
+
+
+// Header
+  #showcase {
+    .container {
+
+      .header-top {
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .logo {
+          margin: 2rem 0;
+        }
+      }
+
+      .header-bottom {
+        h1 {
+           margin: 7rem 0 2rem 0;
+          font-size: 3rem !important;
+        }
+        p{
+            text-align: center;
+        }
+      }
+
+
+
+    }
+  }
+
+    // About
+    #section-about{
+        .about{
+            &-content{
+                flex-direction: column;
+            }
+            &-image{
+
+
+                img{
+                    width: 70%;
+                }
+            }
+            &-description{
+                h2{
+                    margin: 0;
+                    text-align: center;
+                }
+                p{
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+
+    // Destination
+    #section-destination{
+        
+        .content-top{
+            display: flex;
+            flex-direction: column;
+
+
+            h2{
+                text-align: center;
+                margin: 1rem 0;
+            }
+            p{
+                text-align: center;
+                padding: 0;
+            }
+            .info{
+                display: none;
+            }
+            form{
+                margin: 1rem 0;
+                flex-direction: column;
+                .search-input{
+                    margin: 1rem 0;
+                }
+            }
+        }  
+        
+        // Gallery
+        
+        .destination-gallery{
+            grid-template-areas:
+            'bImg'
+            'bDesc'
+            'brImg'
+            'brDesc'
+            'num'; 
+
+            .bromo-img-2{
+                display: none;
+            }
+
+            .batu-desc,
+            .bromo-desc{
+                text-align: center;
+            }
+        }
+
+    }
+
+
+    // Contact
+
+    #section-contact{
+        background: linear-gradient( rgba(1,162,166, 0.8), rgba(1,162,166, 0.8) ),
+        url(../img/contact/background.png) no-repeat center 50%;
+        h1{
+            margin: 2rem 0;
+        }
+
+        .contact-content{
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+
+
+            form{
+                padding: 1rem;
+                grid-template-areas:
+                'email'
+                'company'
+                'subject'
+                'message'
+                'btn'; 
+
+                .btn{
+                    grid-column: 1;
+                }
+            }
+
+            .address{
+                text-align: center;
+            }
+        }
+    }
+
+    #main-footer{
+        .footer-top{
+            min-height: 150px;
+        }
+
+        .footer-bottom{
+            min-height: 150px;
+
+            .bottom-content{
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                text-align: center;
+                .linki{
+
+                }
+                .socials{
+                    ul{
+                        justify-content: space-around;
+                        margin: 1rem 0;
+                        li{
+                            font-size: 2rem;
+                        }
+                    }
+                }
+
+                .copy{
+                    grid-column: 1;
+                }
+            }
+        }
+    }
+
+}
