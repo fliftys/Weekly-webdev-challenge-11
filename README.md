@@ -10,5 +10,5 @@ Strona napisania w celu przetrenowania HTML5 i CSS3 przy użyciu preprocesora SA
   <li>CSS3 (SASS) </li>
 </ul>
 
-<h4>Użyte technologie</h4>
+<h4>Użyte narzędzia</h4>
 Podczas kodowania korzystałem z programów/narzędzi: Vs code, Photoshop + npm, node-sass
